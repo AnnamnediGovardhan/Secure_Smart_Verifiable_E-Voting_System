@@ -1,0 +1,17 @@
+# Core runtime dependencies.
+# Version RANGES (not ==) so pip installs prebuilt wheels for whatever Python
+# you have, including Python 3.13 — no C/C++ compiler needed.
+fastapi>=0.111
+uvicorn[standard]>=0.30
+numpy>=2.1.0
+opencv-python>=4.10.0.84
+scikit-learn>=1.5.2
+
+# ---------------------------------------------------------------------------
+# Optional heavy deep-learning backends for the REAL trained models.
+# Install these on a GPU machine only if you are training/serving full models;
+# the system runs without them. (They are large and may need extra setup.)
+# tensorflow>=2.17        # face / iris / deepfake CNNs
+# torch torchvision       # alternative DL backend
+# face-recognition        # dlib-based 128-d embeddings (needs cmake + compiler)
+# mediapipe               # face-mesh / blink-based liveness

@@ -1,0 +1,13 @@
+{
+  "name": "ssvevs-evoting",
+  "version": "1.0.0",
+  "private": true,
+  "description": "Blockchain-Integrated Multimodal Biometric E-Voting System (SSVEVS+) — single-terminal launcher",
+  "scripts": {
+    "start": "python run.py",
+    "setup": "python run.py --setup",
+    "check": "python run.py --check",
+    "headless": "python run.py --no-frontend",
+    "dev": "python run.py --dev"
+  }
+}

@@ -1,0 +1,8 @@
+# The agent reuses the same libs as the ML service (already installed by run.py --setup):
+fastapi>=0.111
+uvicorn[standard]>=0.30
+numpy>=2.1.0
+opencv-python>=4.10.0.84
+# For a REAL serial scanner, also install one of:
+# pyserial>=3.5
+# pyfingerprint>=0.3      # R307 / ZFM-20 / FPM10A family
